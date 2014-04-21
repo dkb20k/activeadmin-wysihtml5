@@ -1,4 +1,5 @@
 class Asset < ActiveRecord::Base
+  extend Dragonfly::Model
   dragonfly_accessor :storage
 
   def percentage_thumb_url(size)
